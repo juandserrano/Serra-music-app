@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useCallback } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPlay,
@@ -36,7 +36,7 @@ function Player({
       Math.floor(time / 60) + ":" + ("0" + Math.floor(time % 60)).slice(-2)
     );
   };
-  const skipTrackHandler = async (direction) => {
+  const skipTrackHandler = useCallback(async (direction) => {
     let currentIndex = songs.findIndex((s) => s.id === currentSong.id);
     if (direction === "skip-back") {
       currentIndex === 0
@@ -47,22 +47,22 @@ function Player({
         ? setCurrentSong(songs[0])
         : setCurrentSong(songs[currentIndex + 1]);
     }
-    const audioPromise = await audioRef.current.play();
+    //const audioPromise = await audioRef.current.play();
     audioRef.current.play();
 
     setIsPlaying(true);
-  };
+  }, [songs, currentSong, audioRef, setIsPlaying, setCurrentSong]);
 
   //State
-  const autoSkip = () => {
+  const autoSkip = useCallback(() => {
     if (songInfo.currentTime === songInfo.duration) {
       skipTrackHandler("skip-forward");
     }
-  };
+  }, [songInfo, skipTrackHandler]);
 
   useEffect(() => {
     autoSkip();
-  }, [songInfo.currentTime]);
+  }, [autoSkip]);
 
   const trackAnim = {
     transform: `translateX(${songInfo.animationPercentage}%)`,
