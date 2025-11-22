@@ -2,11 +2,11 @@ import { v4 as uuidv4 } from "uuid";
 function chillHop() {
   return [
     {
-      name: "Beaver Creek",
+      name: "Aftersome",
       cover:
-        "https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
-      artist: "Aso, Middle School, Aviino",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=10075",
+        "https://cms.chillhop.com/media/20386/squarel732128e1da8fd5f6292ffc1926a2ea840a54f4d0.jpg",
+      artist: "Toonorth",
+      audio: "https://chill-assets.b-cdn.net/mp3/192/17940-toonorth-aftersome.mp3",
       color: ["#205950", "#2ab3bf"],
       id: uuidv4(),
       active: true,
