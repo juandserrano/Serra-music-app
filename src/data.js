@@ -12,66 +12,46 @@ function chillHop() {
       active: true,
     },
     {
-      name: "Daylight",
+      name: "After Hours",
       cover:
-        "https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
-      artist: "Aiguille",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=9272",
+        "https://cms.chillhop.com/media/35631/squarel36fcc61f2d1c707e99f36706700d73229e2e8dff.jpg",
+      artist: "Poldoore",
+      audio: "https://chill-assets.b-cdn.net/mp3/192/36941-poldoore-after-hours.mp3",
       color: ["#EF8EA9", "#ab417f"],
       id: uuidv4(),
       active: false,
     },
     {
-      name: "Keep Going",
+      name: "Flushing the Stairs",
       cover:
-        "https://chillhop.com/wp-content/uploads/2020/07/ff35dede32321a8aa0953809812941bcf8a6bd35-1024x1024.jpg",
-      artist: "Swørn",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=9222",
+        "https://cms.chillhop.com/media/9975/squarel6defa6c89a6902fdd84bccd720c2b8fd29c40990.jpg",
+      artist: "Leavv",
+      audio: "https://chill-assets.b-cdn.net/mp3/192/9916-leavv-flushing-the-stairs.mp3",
       color: ["#CD607D", "#c94043"],
       id: uuidv4(),
       active: false,
     },
     {
-      name: "Nightfall",
+      name: "Goodbye",
       cover:
-        "https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
-      artist: "Aiguille",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=9148",
+        "https://cms.chillhop.com/media/73677/squarelb1f13b18de0af32a1bf083bc7fd4fd3a2033406d.jpg",
+      artist: "Ian Ewing",
+      audio: "https://stream.chillhop.com/mp3/71671",
       color: ["#EF8EA9", "#ab417f"],
       id: uuidv4(),
       active: false,
     },
     {
-      name: "Reflection",
+      name: "Cruisin'",
       cover:
-        "https://chillhop.com/wp-content/uploads/2020/07/ff35dede32321a8aa0953809812941bcf8a6bd35-1024x1024.jpg",
-      artist: "Swørn",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=9228",
+        "https://cms.chillhop.com/media/63530/squarel6f0daa06bb93143d1b7660298eabe1d95b9eb983.jpg",
+      artist: "Aves",
+      audio: "https://chill-assets.b-cdn.net/mp3/192/65376-aves-cruisin.mp3",
       color: ["#CD607D", "#c94043"],
-      id: uuidv4(),
-      active: false,
-    },
-    {
-      name: "Under the City Stars",
-      cover:
-        "https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
-      artist: "Aso, Middle School, Aviino",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=10074",
-      color: ["#205950", "#2ab3bf"],
       id: uuidv4(),
       active: false,
     },
     //ADD MORE HERE
-    {
-      name: "Flushing the Stairs",
-      cover:
-        "https://chillhop.com/wp-content/uploads/2020/09/6defa6c89a6902fdd84bccd720c2b8fd29c40990-1024x1024.jpg",
-      artist: "Leavv",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=9917",
-      color: ["#054048", "#9EBD86"],
-      id: uuidv4(),
-      active: false,
-    },
   ];
 }
 
